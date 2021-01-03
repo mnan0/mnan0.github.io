@@ -3,6 +3,7 @@ body{
     color: black;
     background-color:white;
     font-family:sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 #icon-img {
     background: url("/images/life_map_icon_small.png") no-repeat;
@@ -13,3 +14,54 @@ body{
     
 }
 
+#header-nav {
+    
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.navbar-brand h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    
+}
+.navbar-brand a:link, .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+
+/*****MEDIA QUERIES*****/
+
+/*****extra small******/
+@media (max-width: 575px){
+
+}
+
+/******small******/
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+
+/******medium*****/
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/******large******/
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+/****extra large*****/
+@media (min-width: 1200px) and (max-width: 1399px){
+
+}
+
+/*****extra extra large*****/
+@media (min-width: 1400px){
+
+}
