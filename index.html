@@ -9,35 +9,47 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/16c71bbefb.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- <div>This is a paragraph. Hi!</div>
         <a href = "contact.html" title = "same dir link"> Testing links! </a> -->
 
-        <nav id = "header-nav" class = "navbar navbar-light">
+        <nav id = "header-nav" class = "navbar navbar-light navbar-expand-lg">
             <div class = "container">
                 
                 <a href = "index.html" class = "float-start" >
                     <!-- <div id = "icon-img"></div> -->
                     <img src="images/life_map_icon_small.png">
-                </a>
+                </a>    
                 <div class = "navbar-brand">
                     <a href = "index.html">
                         <h1>Peter Sellars</h1>
                     </a>
                 </div>
-                <button type = "button" class = "navbar-toggler" data-toggle = "collapse" aria-controls = "navbarMenuContent" data-target = "#navbarMenuContent" aria-expanded="false">
+                <button type = "button" class = "navbar-toggler" data-bs-toggle = "collapse" 
+                data-bs-target = "#navbarMenuContent" aria-controls = "navbarMenuContent" aria-expanded="false">
                     <span class = "navbar-toggler-icon"></span>
                 </button>
-                <div class = "collapse" id = "#navbarMenuContent">
+                <div class = "collapse navbar-collapse" id = "#navbarMenuContent">
                     <ul id = "nav-list" class = "navbar-nav">
                         <li class = "active nav-item">
                             <a href = "index.html">
-                                <span class = "bi house"></span>Home
+                                <i class="fas fa-home"></i>
+                                Home
                             </a>
                         </li>
                         <li class = "nav-item">
-                            <a href = 
+                            <a href = "about.html">
+                                <i class="fas fa-info-circle"></i>
+                                About
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html">
+                                <i class="fas fa-quote-right"></i>
+                                Blog
+                            </a>
                         </li>
                     </ul>
                 </div>

@@ -31,9 +31,17 @@ body{
     margin-bottom: 0px;
     
 }
-.navbar-brand a:link, .navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:link, .navbar-brand a:hover, .navbar-brand a:focus, 
+#nav-list a:link, #nav-list a:hover, #nav-list a:focus {
     text-decoration: none;
   }
+
+#nav-list a:hover {
+    background: gainsboro;
+}
+#nav-list {
+    text-align: center;
+}
 
 /*****MEDIA QUERIES*****/
 
