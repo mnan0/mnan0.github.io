@@ -6,11 +6,10 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 #icon-img {
-    background: url("/images/life_map_icon_small.png") no-repeat;
+    
     width: 150px;
     height: 150px;
-    /* object-fit: cover; */
-    margin: 10px 15px 10px 0; 
+    margin: 0 15px 0 0;
     
 }
 
@@ -22,11 +21,11 @@ body{
 }
 .navbar-brand h1 {
     font-family: 'Staatliches', cursive;
-    font-size: 3.5em;
+    font-size: 4.5em;
     text-transform: uppercase;
     color: black;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 200px;
+    margin-left: 20px;
     margin-top:0px;
     margin-bottom: 0px;
     
@@ -37,44 +36,86 @@ body{
   }
 
 #nav-list a:hover {
-    background: gainsboro;
+    background-color: gainsboro;
 }
 #nav-list a{
     text-align: center;
+    width: 50px;
     font-size: 1.8em;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    position: relative;
+    margin-right: 25px;
     margin-top: auto;
     margin-bottom: auto;
     color: black;
+    
 }
 #nav-list i{
     text-align:center;
     width: 100%;
+    position: absolute;
+    left: -11px;
+    top: 17px;
     padding: 0px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     
+}
+
+.nav-item {
+    margin-bottom: 6px;
 }
 /*****MEDIA QUERIES*****/
 
 /*****extra small******/
 @media (max-width: 575px){
-
+    .navbar-brand h1{
+        font-size: 3.5em;
+        margin-right: 10px;  
+    }
+    #nav-list i{
+        visibility: hidden;
+    }
+    #nav-list a{
+        margin-left: 20px;
+    }
 }
 
 /******small******/
 @media (min-width: 576px) and (max-width: 767px){
-
+    .navbar-brand h1{
+        font-size: 3.5em;
+        margin-right: 10px;  
+    }
+    #nav-list i{
+        visibility: hidden;
+    }
+    #nav-list a{
+        margin-left: 20px;
+    }
+    
+    
 }
 
 /******medium*****/
 @media (min-width: 768px) and (max-width: 991px){
+    .navbar-brand h1{
+        font-size:3.5em;
+        margin-left: 0;
+        margin-right: 20px;
+    }
 
+    .nav-item {
+        margin-bottom: 17px;
+    }
+    
 }
 
 /******large******/
 @media (min-width: 992px) and (max-width: 1199px){
-
+    .navbar-brand h1 {
+        margin-right: 20px;
+        margin-left: 10px;
+    }
 }
 /****extra large*****/
 @media (min-width: 1200px) and (max-width: 1399px){
