@@ -8,53 +8,103 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Open+Sans&family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/16c71bbefb.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <header>
         <!-- <div>This is a paragraph. Hi!</div>
         <a href = "contact.html" title = "same dir link"> Testing links! </a> -->
 
-        <nav id = "header-nav" class = "navbar navbar-light navbar-expand-md">
-            <div class = "container">
-                
-                <a href = "index.html" class = "float-start d-none d-lg-block" >
+            <nav id = "header-nav" class = "navbar navbar-light navbar-expand-md">
+                <div class = "container">
                     
-                    <img id = "icon-img" src="images/life_map_icon_small.png">
-                </a>    
-                <div class = "navbar-brand">
-                    <a href = "index.html">
-                        <h1>Peter Sellars</h1>
-                    </a>
+                    <a href = "index.html" class = "float-start d-none d-lg-block" >
+                        
+                        <img id = "icon-img" src="images/life_map_icon_small.png">
+                    </a>    
+                    <div class = "navbar-brand">
+                        <a href = "index.html">
+                            <h1>Peter Sellars</h1>
+                        </a>
+                    </div>
+                    <button type = "button" class = "navbar-toggler" data-bs-toggle = "collapse" 
+                    data-bs-target = "#navbarMenuContent" aria-controls = "navbarMenuContent" aria-expanded="false">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <div class = "collapse navbar-collapse" id = "navbarMenuContent">
+                        <ul id = "nav-list" class = "navbar-nav">
+                            <li class = "nav-item home-item">
+                                <a href = "index.html">
+                                    <i class="fas fa-home "></i><br class = "d-none d-md-block">
+                                    Home
+                                </a>
+                            </li>
+                            <li class = "nav-item about-item">
+                                <a href = "about.html">
+                                    <i class="fas fa-info-circle "></i><br class = "d-none d-md-block">
+                                    About
+                                </a>
+                            </li>
+                            <li class = "nav-item blog-item">
+                                <a href = "blog.html">
+                                    <i class="fas fa-quote-right "></i><br class = "d-none d-md-block">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button type = "button" class = "navbar-toggler" data-bs-toggle = "collapse" 
-                data-bs-target = "#navbarMenuContent" aria-controls = "navbarMenuContent" aria-expanded="false">
-                    <span class = "navbar-toggler-icon"></span>
-                </button>
-                <div class = "collapse navbar-collapse" id = "navbarMenuContent">
-                    <ul id = "nav-list" class = "navbar-nav">
-                        <li class = "active nav-item">
-                            <a href = "index.html">
-                                <i class="fas fa-home "></i><br class = "d-none d-md-block">
-                                Home
+            </nav>
+        </header>   
+        
+        <div id = "main-content" class = "container">
+            <div id = "home-tiles" class = "row">
+                <div class = "col-md-6 col-sm-12 col-12">
+                    <img id = "portrait" src = "images/cropped portrait.jpg">
+                </div>
+                <div class = "col-md-6 col-sm-12 col-12">
+                    <div id = "elevator-pitch">
+                        <p>Hi, nice to meet you!</p> 
+                        <p>I'm a second-year undergraduate student studying computer science and economics
+                         at the <a href = "https://www.utoronto.ca" target = "_blank">University of Toronto</a>.</p>
+                        <p>I'm pursuing a career in software development.</p>
+                        <p>I'm a self-starter who enjoys solving complex, meaningful problems in technology and finance.</p>
+                        <p>Follow me on Github: 
+                            <a href = "https://github.com/mnan0" target = "_blank">
+                             @mnan0.
                             </a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "about.html">
-                                <i class="fas fa-info-circle "></i><br class = "d-none d-md-block">
-                                About
-                            </a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "blog.html">
-                                <i class="fas fa-quote-right "></i><br class = "d-none d-md-block">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
+                        </p>
+                    </div>
+                </div>
+                <h2 id = "projects-title" class = "content-heading">
+                    Projects
+                </h2>
+                <div class = "col-md-6 col-sm-12 col-12">
+                    <div id="doodle-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img id = "doodle-img" src="images/doodle1.png" class="d-block w-75" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <img id = "doodle-img" src="images/doodle2.png" class="d-block w-75" alt="...">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <img id = "doodle-img" src="images/doodle3.png" class="d-block w-75" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#doodlecarousel" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#doodlecarousel" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                      </div>
                 </div>
             </div>
-        </nav>
+        </div>
         <!-- required for bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>

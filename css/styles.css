@@ -14,10 +14,10 @@ body{
 }
 
 #header-nav {
-    
-    border-style: solid;
+    background-color:rgb(218, 233, 238);
+    /* border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: black; */
 }
 .navbar-brand h1 {
     font-family: 'Staatliches', cursive;
@@ -31,10 +31,25 @@ body{
     
 }
 .navbar-brand a:link, .navbar-brand a:hover, .navbar-brand a:focus, 
-#nav-list a:link, #nav-list a:hover, #nav-list a:focus {
+#nav-list a:link, #nav-list a:hover, #nav-list a:focus,
+#elevator-pitch a:link, #elevator-pitch a:hover, #elevator-pitch a:focus {
     text-decoration: none;
   }
-
+.home-item{
+    width: 80px;
+    margin-right: 15px;
+}
+.about-item{
+    width: 82px;
+    margin-right: 15px;
+} 
+.blog-item{
+    width: 60px;
+    margin-right: 15px;
+}
+#nav-list li:hover {
+    background-color: gainsboro;
+}
 #nav-list a:hover {
     background-color: gainsboro;
 }
@@ -63,6 +78,46 @@ body{
 
 .nav-item {
     margin-bottom: 6px;
+    margin-right: 35px;
+    white-space: nowrap; 
+}
+
+#main-content {
+    margin-top: 20px;
+}
+#portrait {
+    width: 65%;
+    height: 400px;
+    display:block;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 50%;
+}
+
+#elevator-pitch {
+    font-size: 1.5em;
+}
+
+.content-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: black;
+    
+}
+
+/* #doodle-carousel {
+    width:100%;
+}  */
+#doodle-img {
+    
+    height: 321px;
+    width: 321px;
+    
 }
 /*****MEDIA QUERIES*****/
 
@@ -72,8 +127,15 @@ body{
         font-size: 3.5em;
         margin-right: 10px;  
     }
-    #nav-list i{
-        visibility: hidden;
+    #nav-list i{ 
+        
+        text-align: center;
+        width: auto; 
+        position: relative; 
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        vertical-align: inherit;
     }
     #nav-list a{
         margin-left: 20px;
@@ -87,7 +149,13 @@ body{
         margin-right: 10px;  
     }
     #nav-list i{
-        visibility: hidden;
+        text-align: center;
+        width: auto; 
+        position: relative; 
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        vertical-align: inherit;
     }
     #nav-list a{
         margin-left: 20px;
