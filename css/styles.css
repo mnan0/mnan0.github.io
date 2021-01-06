@@ -21,7 +21,7 @@ body{
 }
 .navbar-brand h1 {
     font-family: 'Staatliches', cursive;
-    font-size: 4.5em;
+    font-size: 5em;
     text-transform: uppercase;
     color: black;
     margin-right: 200px;
@@ -104,20 +104,44 @@ body{
     text-align: center;
     text-transform: uppercase;
     font-family: "Montserrat",sans-serif;
-    margin-top: 30px;
-    font-size: 2.5em;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3.5em;
     color: black;
     
 }
 
-/* #doodle-carousel {
-    width:100%;
-}  */
-#doodle-img {
+ .carousel {
+    width:400px;
+    height: 400px;
+    margin: 0 auto;
+}  
+.carousel-item img {
     
-    height: 321px;
-    width: 321px;
+    height:100%;
+    width: 100%;
     
+}
+.project-heading {
+    font-size: 1.5em;
+}
+.project-heading a {
+    text-decoration: none;
+}
+.project-content {
+    font-size: 1.25em;
+}
+.project-separate {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card-footer {
+    height: 100px;
+    margin-top: 25px;
+    background-color: rgb(218, 233, 238);
+    text-align: center;
+    padding-top: 40px;
 }
 /*****MEDIA QUERIES*****/
 
