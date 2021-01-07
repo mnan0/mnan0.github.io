@@ -30,11 +30,15 @@ body{
     margin-bottom: 0px;
     
 }
-.navbar-brand a:link, .navbar-brand a:hover, .navbar-brand a:focus, 
+.navbar-brand h1 a:link, .navbar-brand h1 a:hover, .navbar-brand h1 a:focus, 
 #nav-list a:link, #nav-list a:hover, #nav-list a:focus,
 #elevator-pitch a:link, #elevator-pitch a:hover, #elevator-pitch a:focus {
     text-decoration: none;
   }
+
+.navbar-brand h1 a{
+    color: black;
+}
 .home-item{
     width: 80px;
     margin-right: 15px;
@@ -119,9 +123,12 @@ body{
 }  
 .carousel-item img {
     
-    height:100%;
     width: 100%;
+    height: 100%;
     
+}
+#rblx {
+    color: blue;
 }
 .project-heading {
     font-size: 1.5em;
@@ -144,9 +151,42 @@ body{
     padding-top: 40px;
 }
 /*****MEDIA QUERIES*****/
-
+/***super small*******/
+@media (max-width:515px){
+    .navbar-brand h1{
+        font-size: 3em;
+        margin-right: 10px;  
+    }
+    #nav-list i{ 
+        
+        text-align: center;
+        width: auto; 
+        position: relative; 
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        vertical-align: inherit;
+    }
+    #nav-list a{
+        margin-left: 20px;
+    }
+    #portrait {
+        height: 300px;
+        width: 60%;
+        margin-bottom: 25px;
+    }
+    .carousel {
+        margin-bottom: 15px;
+    }
+    .project-heading {
+        text-align: center;
+    }
+    #elevator-pitch{
+        font-size: 1.2em;
+    } 
+}
 /*****extra small******/
-@media (max-width: 575px){
+@media (min-width: 515px) and (max-width: 575px){
     .navbar-brand h1{
         font-size: 3.5em;
         margin-right: 10px;  
@@ -164,6 +204,20 @@ body{
     #nav-list a{
         margin-left: 20px;
     }
+    #portrait {
+        height: 300px;
+        width: 60%;
+        margin-bottom: 25px;
+    }
+    .carousel {
+        margin-bottom: 15px;
+    }
+    .project-heading {
+        text-align: center;
+    }
+    #elevator-pitch{
+        font-size: 1.2em;
+    } 
 }
 
 /******small******/
@@ -184,6 +238,20 @@ body{
     #nav-list a{
         margin-left: 20px;
     }
+    #portrait {
+        height: 300px;
+        width: 60%;
+        margin-bottom: 25px;
+    }
+    .carousel {
+        margin-bottom: 15px;
+    }
+    .project-heading {
+        text-align: center;
+    }
+    #elevator-pitch{
+        font-size: 1.2em;
+    } 
     
     
 }
@@ -199,19 +267,47 @@ body{
     .nav-item {
         margin-bottom: 17px;
     }
+    #elevator-pitch{
+        font-size: 1.2em;
+    }
+    #portrait {
+        width: 100%;
+    }
+    .project-content {
+        font-size: 1.2em;
+    }
+    .carousel{
+        width: 300px;
+        height: 300px;
+    }
+    .blog-item {
+        margin-right: 10px;
+    }
+    
     
 }
 
 /******large******/
 @media (min-width: 992px) and (max-width: 1199px){
     .navbar-brand h1 {
-        margin-right: 20px;
+        margin-right: 65px;
         margin-left: 10px;
+    }
+    #portrait{
+        width: 80%;
+    }
+    #elevator-pitch{
+        font-size: 1.3em;
     }
 }
 /****extra large*****/
 @media (min-width: 1200px) and (max-width: 1399px){
-
+    #portrait {
+        width: 70%;
+    }
+    .navbar-brand h1 {
+        margin-right: 90px;
+    }
 }
 
 /*****extra extra large*****/
